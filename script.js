@@ -43,3 +43,11 @@ function desencriptar(stringDesencriptado){
     }
     return stringDesencriptado;
 }
+
+function copiarTexto(){
+
+    mensaje.select();
+    mensaje.setSelectionRange(0, 99999);
+
+    navigator.clipboard.writeText(mensaje.value);
+}
